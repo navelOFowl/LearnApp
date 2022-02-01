@@ -28,5 +28,10 @@ namespace LearnApp
             Frames.FrameMain = FrmMain;
             Frames.FrameMain.Navigate(new ServiceList());
         }
+
+        private void ButtAdmin_Click(object sender, RoutedEventArgs e)
+        {
+            
+        }
     }
 }

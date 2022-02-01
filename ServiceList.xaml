@@ -17,13 +17,16 @@
             </ListView.ItemsPanel>
             <ListView.ItemTemplate>
                 <DataTemplate>
-                    <Border Padding="5" CornerRadius="5" BorderThickness="1">
-                        <Grid Width="300" Height="200">
-                            <StackPanel>
+                    <Border Padding="5" CornerRadius="5" BorderThickness="1" Background="{Binding SaleColor}">
+                        <Grid Width="600" Height="100">
+                            <StackPanel Orientation="Horizontal">
                                 <Image Source="{Binding MainImagePath}" Height="50" Width="100"/>
-                                <TextBlock Text="{Binding Title}"></TextBlock>
-                                <TextBlock Text="{Binding Cost}"></TextBlock>
-                                <TextBlock Text="{Binding DurationSeconds}"></TextBlock>
+                                <StackPanel>
+                                    <TextBlock Text="{Binding Title}"></TextBlock>
+                                    <TextBlock TextDecorations="{Binding Sale}" Text="{Binding Cost}"></TextBlock>
+                                    <TextBlock Text="{Binding TotalCost}"></TextBlock>
+                                    <TextBlock Text="{Binding DurationSeconds}"></TextBlock>
+                                </StackPanel>
                             </StackPanel>
                         </Grid>
                     </Border>

@@ -11,6 +11,7 @@ namespace LearnApp
 {
     using System;
     using System.Collections.Generic;
+    using LearnApp.Classes;
     
     public partial class Service
     {

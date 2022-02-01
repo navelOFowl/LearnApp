@@ -5,10 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:LearnApp"
         mc:Ignorable="d"
-        Title="Леарн" Height="450" Width="800" Icon="Images/school_logo.ico">
+        Title="Леарн" Height="600" Width="650" Icon="Images/school_logo.ico" MinHeight="600" MinWidth="650">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
+            <ColumnDefinition Width="370"/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
@@ -16,7 +16,7 @@
             <RowDefinition/>
         </Grid.RowDefinitions>
         <Frame Name="FrmMain" Grid.Row="1" Grid.ColumnSpan="2"/>
-        <TextBlock FontFamily="Comic Sans MS" FontSize="18" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="#04A0FF">Школа иностранных языков Леарн</TextBlock>
-        <Button FontFamily="Comic Sans MS" Grid.Column="1" Width="100" Height="30" HorizontalAlignment="Right" Margin="0,0,15,0" Background="Wheat" BorderThickness="0">Авторизация</Button>
+        <TextBlock FontFamily="Comic Sans MS" FontSize="16" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="#04A0FF">Школа иностранных языков Леарн</TextBlock>
+        <Button Name="ButtAdmin" FontFamily="Comic Sans MS" Grid.Column="1" Width="100" Height="30" HorizontalAlignment="Right" Margin="0,0,15,0" Background="Wheat" BorderThickness="0" Click="ButtAdmin_Click">Авторизация</Button>
     </Grid>
 </Window>
