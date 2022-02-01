@@ -1,4 +1,4 @@
-﻿<Page x:Class="LearnApp.ServiceList"
+﻿<Page x:Class="LearnApp.AdminList"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:LearnApp"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="ServiceList">
+      Title="AdminList">
 
     <Grid>
         <ListView Name="LVServices" ScrollViewer.HorizontalScrollBarVisibility="Disabled">
@@ -22,10 +22,14 @@
                             <StackPanel Orientation="Horizontal">
                                 <Image Source="{Binding MainImagePath}" Height="50" Width="100"/>
                                 <StackPanel>
-                                    <TextBlock Style="{StaticResource lvText}"  Text="{Binding Title}"></TextBlock>
+                                    <TextBlock Style="{StaticResource lvText}" Text="{Binding Title}"></TextBlock>
                                     <TextBlock Style="{StaticResource lvText}" TextDecorations="{Binding Sale}" Text="{Binding Cost}"></TextBlock>
                                     <TextBlock Style="{StaticResource lvText}" Text="{Binding TotalCost}"></TextBlock>
                                     <TextBlock Style="{StaticResource lvText}" Text="{Binding Duration}"></TextBlock>
+                                    <StackPanel Orientation="Horizontal">
+                                        <Button Name="ButtEdit" Uid="{Binding ID}" Click="ButtEdit_Click">Редактировать</Button>
+                                        <Button Name="ButtDelete" Uid="{Binding ID}" Click="ButtDelete_Click">Удалить</Button>
+                                    </StackPanel>
                                 </StackPanel>
                             </StackPanel>
                         </Grid>

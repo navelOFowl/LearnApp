@@ -21,6 +21,7 @@ namespace LearnApp
     /// </summary>
     public partial class MainWindow : Window
     {
+        public static bool adTumbler = false;
         public MainWindow()
         {
             InitializeComponent();
@@ -31,7 +32,12 @@ namespace LearnApp
 
         private void ButtAdmin_Click(object sender, RoutedEventArgs e)
         {
-            
+            AdminCheck win = new AdminCheck();
+            win.ShowDialog();
+            if(adTumbler == true)
+            {
+                Frames.FrameMain.Navigate(new AdminList());
+            }
         }
     }
 }

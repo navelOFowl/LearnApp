@@ -4,6 +4,12 @@
              xmlns:local="clr-namespace:LearnApp"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-
+        <Style x:Key="font" TargetType="TextBlock">
+            <Setter Property="FontFamily" Value="Comic Sans MS"/>
+            <Setter Property="Foreground" Value="#04A0FF"/>
+        </Style>
+        <Style x:Key="lvText" TargetType="TextBlock">
+            <Setter Property="FontFamily" Value="Comic Sans MS"/>
+        </Style>
     </Application.Resources>
 </Application>

@@ -55,5 +55,12 @@ namespace LearnApp
                 }
             }
         }
+        public string Duration
+        {
+            get
+            {
+                    return "Длительность: " + (DurationInSeconds/60).ToString() + " мин.";
+            }
+        }
     }
 }

@@ -15,8 +15,8 @@
             <RowDefinition Height="50"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <Frame Name="FrmMain" Grid.Row="1" Grid.ColumnSpan="2"/>
-        <TextBlock FontFamily="Comic Sans MS" FontSize="16" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="#04A0FF">Школа иностранных языков Леарн</TextBlock>
-        <Button Name="ButtAdmin" FontFamily="Comic Sans MS" Grid.Column="1" Width="100" Height="30" HorizontalAlignment="Right" Margin="0,0,15,0" Background="Wheat" BorderThickness="0" Click="ButtAdmin_Click">Авторизация</Button>
+        <Frame Name="FrmMain" Grid.Row="1" Grid.ColumnSpan="2" NavigationUIVisibility="Hidden"/>
+        <TextBlock FontSize="16" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource font}">Школа иностранных языков Леарн</TextBlock>
+        <Button Name="ButtAdmin" FontFamily="Comic Sans MS" Grid.Column="1" Width="100" Height="30" HorizontalAlignment="Right" Margin="0,0,15,0" Background="#04A0FF" Foreground="White" BorderThickness="0" Click="ButtAdmin_Click">Авторизация</Button>
     </Grid>
 </Window>
