@@ -46,5 +46,14 @@ namespace LearnApp
             Frames.FrameMain.Navigate(new AdminList());
             MessageBox.Show("Услуга удалена!", "Удаление", MessageBoxButton.OK, MessageBoxImage.Asterisk);
         }
+
+        private void ButtAcc_Click(object sender, RoutedEventArgs e)
+        {
+            Button button = (Button)sender;
+            int ID = Convert.ToInt32(button.Uid);
+            Service lessAcc = DataBase.db.Service.FirstOrDefault(x => x.ID == ID);
+            AccWindow win = new AccWindow(lessAcc);
+            win.ShowDialog();
+        }
     }
 }

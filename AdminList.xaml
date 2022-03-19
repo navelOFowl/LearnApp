@@ -29,6 +29,7 @@
                                     <StackPanel Orientation="Horizontal">
                                         <Button Name="ButtEdit" Uid="{Binding ID}" Click="ButtEdit_Click">Редактировать</Button>
                                         <Button Name="ButtDelete" Uid="{Binding ID}" Click="ButtDelete_Click">Удалить</Button>
+                                        <Button Name="ButtAcc" Uid="{Binding ID}" Click="ButtAcc_Click">Записать</Button>
                                     </StackPanel>
                                 </StackPanel>
                             </StackPanel>
